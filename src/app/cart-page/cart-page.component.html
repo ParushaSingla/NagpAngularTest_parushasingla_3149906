@@ -1,0 +1,12 @@
+
+total items in cart :{{cartItem.length}}
+<table>
+  <tr>
+    <th>CartDetails</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let p of cartItem">
+    <td>{{p.name}}</td>
+    <td><button (click)="delete(p.id)">delete</button></td>
+  </tr>
+</table>

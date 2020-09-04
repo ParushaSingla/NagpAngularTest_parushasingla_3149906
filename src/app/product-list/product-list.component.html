@@ -1,0 +1,10 @@
+<table>
+  <tr>
+    <th>Name of product</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let product of productList">
+    <td>{{product.name}}</td>
+    <td><button [routerLink]="['/productDetail',product.id]">View</button></td>
+  </tr>
+</table>
